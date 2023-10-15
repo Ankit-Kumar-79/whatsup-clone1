@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --color-left-side: #fff;
+    --color-right-side: #8e8f9070;
+    --color-alert: #48dbfb;
+    --color-notify: #2ecc71;
+    --color-number: #e84393;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    background-color: #000;
+}
+
+.container {
+    width: 75%;
+    height: max-content;
+    margin: 0rem auto;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 33% 72%;
+
+
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+}
+
+.message i {
+    font-size: 1.6rem;
+}
+
+.left-side-container {
+    background-color: var(--color-left-side);
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dcdcdc;
+    padding: .7rem 1rem;
+    border: 1px solid #e1e1e198;
+}
+
+.bell {
+    width: 50px;
+    height: 50px;
+    padding: 0.8rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+.fa-bell-slash {
+    font-size: 1.4rem;
+    color: rgb(0, 250, 250);
+}
+
+.user-logo i {
+    font-size: 2.5rem;
+    color: #808080;
+}
+
+.inner-notification {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0.4rem;
+    background: cyan;
+}
+
+.inner-text a {
+    font-size: .9rem;
+    text-decoration: underline;
+}
+
+.search {
+    position: relative;
+    padding: .6rem;
+    background-color: #cecece42;
+}
+
+.search input {
+    border: 1px solid #d7d6d67a;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: .4rem 1rem 0.4rem 3rem;
+    position: relative;
+    border-radius: .5rem;
+}
+
+label {
+    position: absolute;
+    top: .8rem;
+    font-size: 1.5rem;
+    left: 1.4rem;
+    z-index: 2;
+}
+
+.fa-magnifying-glass {
+    color: #808080;
+    font-size: 1.4rem;
+}
+
+input:focus {
+    outline: none;
+}
+/* ----------------Cursor Pointer -------------------*/
+.contact-container .profile-details,i,.right-side-nav{
+    cursor: pointer;
+}
+
+.contact-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(11, 90px);
+    height: 79vh;
+    padding-bottom: 2rem;
+    overflow: auto;
+}
+
+.contact-container img,
+.flex-left .nav-img img {
+    width: 3.5rem;
+    border-radius: 50%;
+}
+
+.contact-container .profile-details {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #e1e1e198;
+    padding: 0rem 0.8rem;
+}
+
+.contact-container .profile-details .flex-profile {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+.contact-container .profile-details:nth-child(3) {
+    background-color: #cac8c878;
+}
+
+.active span,
+.active p {
+    font-weight: 500;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.time .note {
+    background-color: var(--color-notify);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    margin: 0rem auto;
+}
+
+.time .note span {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+
+
+/*-------------------------------- RIGHT SIDE CSS--------------------------------- */
+/*-------------------------------- RIGHT SIDE CSS--------------------------------- */
+/*-------------------------------- RIGHT SIDE CSS--------------------------------- */
+/*-------------------------------- RIGHT SIDE CSS--------------------------------- */
+/*-------------------------------- RIGHT SIDE CSS--------------------------------- */
+/*-------------------------------- RIGHT SIDE CSS--------------------------------- */
+/*-------------------------------- RIGHT SIDE CSS--------------------------------- */
+.chat-background {
+    background: url(./Images/wp6988787-whatsapp-chat-wallpapers.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 91vh;
+    overflow: scroll;
+}
+
+.right-side-container {
+    width: 100%;
+    height: 100%;
+}
+
+.right-side-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 1.7rem 0.3rem .8rem;
+    border: 1px solid #57575798;
+    background-color: #dcdcdc;
+}
+
+.flex-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.flex-left .nav-img img {
+    width: 3rem;
+}
+
+.flex-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.flex-right i {
+    font-size: 1.5rem;
+    color: #282828;
+}
+
+.chat-container {
+    width: 85%;
+    height: 91%;
+    margin: 0rem auto;
+    overflow: scroll;
+    display: flex;
+    padding-bottom: 4rem;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.number p:first-child {
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.chat-box {
+    width: max-content;
+    background: #fff;
+    padding: .5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.chat-box>p {
+    color: #262626;
+    font-size: 1rem;
+}
+
+.number p:last-child {
+    font-size: .8rem;
+    color: #6b6b6bc9;
+}
+
+.number>.pink {
+    color: var(--color-number);
+}
+
+.number>.green {
+    color: var(--color-notify);
+}
+
+.number>.red {
+    color: red;
+}
+
+.number>.yellow {
+    color: #f1c40f;
+}
+
+.number .voilet {
+    color: #5f27cd;
+}
+
+.chat-float img {
+    width: 21rem;
+}
+
+.unique {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: .7rem;
+    flex-direction: column;
+}
+
+.unique .chat-box {
+    background-color: #034d08;
+    padding: .3rem;
+}
+
+.unique .chat-box p {
+    text-align: center;
+    color: #d2cccc;
+}
+
+.unique .chat-box i {
+    color: #00a8ff;
+}
+
+.bottom-bar {
+    width: 54%;
+    display: flex;
+    background-color: #dcdcdc;
+    align-items: center;
+    position: fixed;
+    bottom: 0rem;
+    padding: 0.6rem;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.input {
+    width: 85%;
+}
+
+.emoji i {
+    font-size: 1.9rem;
+    color: #575757;
+}
+
+.mic i {
+    font-size: 1.6rem;
+    color: #575757;
+}
+
+.input input {
+    width: 100%;
+    height: 2.7rem;
+    border-radius: 0.5rem;
+    padding: 0rem 1rem;
+}
+
+.time>span {
+    font-weight: 500;
+}
+
+.details>p {
+    font-size: .9rem;
+}
+
+.profile-right-side p {
+    font-size: .9rem;
+}
+
+.profile-right-side span {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width:1400px) {
+    .container {
+        width: 88%;
+        grid-template-columns: 30% 70%;
+    }
+
+    .left-side-container {
+        z-index: 2;
+    }
+
+    .bottom-bar {
+        width: 62%;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .container {
+        width: 100%;
+    }
+
+    .bottom-bar {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        grid-template-columns: 100%;
+    }
+
+    .contact-container {
+        display: grid;
+        height: 72vh;
+        padding-bottom: 2.5rem;
+    }
+}
